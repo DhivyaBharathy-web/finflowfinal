@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
+}
+
+/*------------global-----------*/
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #2d67d3;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  cursor: pointer;
+  background-color: #2d67d3;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.row {
+  width: 50%;
+}
+
+button {
+  padding: 17px 30px;
+  background-color: #fff;
+  color: #2d67d3;
+  font-weight: 600;
+  border: none;
+  margin: 30px 10px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+  transition: 0.5s;
+}
+
+button i {
+  margin-left: 20px;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+.primary-btn {
+  background-color: #2d67d3;
+  color: #fff;
+}
+
+#heading {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#heading h3 {
+  font-size: 45px;
+  margin: 20px 0;
+  color: #2d67d3;
+  text-transform: capitalize;
+}
+
+#heading h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.back {
+  background-image: url("../public/images/preview.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  padding-top: 30%;
+  padding-right: 50px;
+  color: #2d67d3;
+  text-align: center;
+}
+
+.back h1 {
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.back h2 {
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.margin {
+  margin-top: 40.3%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.outline-btn {
+  margin: 0;
+  box-shadow: none;
+  border: 2px solid #2d67d3;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.outline-btn:hover {
+  background-color: #2d67d3;
+  color: #fff;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+.shadow {
+  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+  background-color: #fff;
+}
+
+
+@media screen and (max-width: 768px) 
+  {
+    
+  .container {
+    max-width: 90%;
+    margin: 0 10px;
+  }
+  
+  .navbar {
+    flex-direction: column; /* Stack navbar links vertically */
+    justify-content: center; /* Center the links */
+    align-items: center; /* Center the navbar content */
+    padding: 15px; /* Reduce padding for mobile */
+    position: relative; /* Position navbar relatively for mobile */
+  }
+  .features-page {
+    background-image: url("../public/images/preview.jpg");
+  }
+  .benefits-page {
+    background-image: url("../public/images/preview.jpg");
+  }
+  
+  .contact-page {
+    background-image: url("../public/images/preview.jpg");
+  }
+  
+  
+
+
+  .navbar ul {
+    display: block; /* Stack items vertically */
+    text-align: center; /* Center the text */
+  }
+
+  .navbar ul li {
+    margin: 10px 0; /* Vertical spacing between links */
+  }
+
+  .navbar a {
+    font-size: 16px; /* Slightly smaller font for mobile */
+  }
+
+  .grid, .grid2, .grid3 {
+    grid-template-columns: 1fr 1fr; /* Reduced to 2 columns */
+  }
+
+  #heading h3 {
+    font-size: 28px; /* Smaller font for mobile */
+  }
+
+  .back {
+    padding-top: 20%;
+    height: auto; /* Auto height for flexibility */
+    background-position: center;
+  }
+
+  .back h1 {
+    font-size: 48px; /* Smaller hero text */
+  }
+
+  p {
+    font-size: 16px; /* Slightly smaller paragraph text */
+    line-height: 24px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom: 20px; /* Add bottom margin to prevent merging with next section */
+  }
+
+  .flexSB, .flex {
+    flex-wrap: wrap;
+  }
+
+  /* Add margin or padding to sections containing buttons */
+  .section-with-buttons {
+    margin-bottom: 30px; /* Add space below sections with buttons */
+  }
+  #nowant {
+    display: none; /* Hides the 'nowant' div containing the About Us title */
+  }
+
+  /* Adjust grid layout for smaller screens */
+  .grid, .grid2, .grid3 {
+    grid-template-columns: 1fr; /* Stack grid items */
+  }
+  .back {
+    opacity: 0;
+  }
+  
+ 
+}

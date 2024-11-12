@@ -1,0 +1,161 @@
+.price .items {
+  padding: 40px;
+  text-align: center;
+}
+.price h1 {
+  font-size: 50px;
+  margin: 20px 0;
+  color: #2d67d3;
+}
+.price h1 span {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #000;
+}
+.price p {
+  color: grey;
+  margin: 40px 0;
+}
+/*--------------faq-------------*/
+.faq .container {
+  max-width: 70%;
+  border-radius: 5px;
+}
+.faq .box {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.faq button {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 20px;
+}
+.faq h2 {
+  font-weight: 500;
+}
+.faq p {
+  padding: 20px;
+}
+.faq .accordion:hover {
+  background-color: #2d67d3;
+  color: #fff;
+}
+/* Mobile-specific styles for features page */
+@media screen and (max-width: 768px) {
+  /* Reset spacing for features page */
+  .features-page {
+    margin-top: 0;
+    padding-top: 60px; /* Account for fixed header */
+  }
+
+  /* Back component adjustments */
+  .back {
+    padding: 20px 0;
+    margin-bottom: 0;
+  }
+
+  /* Price section adjustments */
+  .price.padding {
+    padding: 30px 0;
+  }
+
+  .price .container {
+    padding: 0 15px;
+  }
+
+  .price .items {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .price h1 {
+    font-size: 28px;
+    margin: 15px 0;
+    line-height: 1.2;
+  }
+
+  .price h1 span {
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .price p {
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* FAQ section adjustments */
+  .faq {
+    padding: 30px 0;
+  }
+
+  .faq .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .faq .box {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .faq button {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+
+  .faq h2 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .faq p {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Grid adjustments */
+  .container.grid {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  /* Animation for content loading */
+  .features-page {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Improve touch targets */
+  .faq button,
+  .price .items button {
+    min-height: 44px;
+  }
+
+  /* Remove unnecessary margins and padding */
+  .price .grid > *:first-child {
+    margin-top: 0;
+  }
+
+  .price .grid > *:last-child {
+    margin-bottom: 0;
+  }
+}

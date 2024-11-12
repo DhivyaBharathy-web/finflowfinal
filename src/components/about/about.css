@@ -1,0 +1,165 @@
+.aboutHome {
+  background-image: url(/public/images/kiss.png);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 0;
+  height: auto;
+}
+
+.aboutHome #heading {
+  text-align: left;
+  padding: 0;
+}
+
+.aboutHome .left img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+
+.aboutHome .right {
+  padding: 80px 50px;
+}
+
+.aboutHome .items {
+  margin-top: 50px;
+}
+
+.aboutHome .item {
+  display: flex;
+  align-items: center; /* Align icon and content in a row */
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.aboutHome .img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px; /* Reduce the space between icon and text content */
+}
+
+.aboutHome .item h2 {
+  font-size: 20px;
+  margin-bottom: 10px; /* Slightly reduce bottom margin for compactness */
+}
+
+.aboutHome .item p {
+  color: #999999;
+  margin: 0; /* Remove default paragraph margin */
+}
+
+.aboutHome .item:hover {
+  background-color: #2d67d3;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.06);
+}
+
+.aboutHome .item:hover p {
+  color: #fff;
+}
+
+/*----------awrapper------------*/
+.awrapper {
+  background-color: rgba(45, 103, 211, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  color: #fff;
+  border-bottom: 1px solid #dad0d0;
+}
+
+.awrapper .box {
+  padding: 20px 0;
+}
+
+.awrapper img {
+  margin-right: 30px;
+}
+
+.awrapper h1 {
+  font-size: 50px;
+}
+
+.awrapper h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust the aboutHome container */
+  .aboutHome {
+    flex-direction: column; /* Stack left and right sections vertically */
+    padding: 20px 10px; /* Add padding for better mobile spacing */
+  }
+
+  .aboutHome #heading {
+    text-align: center; /* Center the heading text on mobile */
+    padding: 0;
+  }
+
+  .aboutHome .left img {
+    opacity: 0; 
+    /* Hide the image in mobile */
+  }
+
+  .aboutHome .right {
+    padding: 20px 10px; /* Reduce padding for mobile */
+  }
+
+  .aboutHome .items {
+    margin-top: 30px; /* Reduced margin for tighter layout */
+  }
+
+  .aboutHome .item {
+    flex-direction: column; /* Stack the icon and text vertically on mobile */
+    padding: 15px; /* Reduce padding for mobile */
+    margin-top: 20px; /* Reduce margin to avoid large gaps */
+  }
+
+  .aboutHome .img {
+    width: 50px; /* Smaller icon size */
+    height: 50px; /* Smaller icon size */
+    margin-bottom: 10px; /* Adjust spacing between icon and text */
+  }
+
+  .aboutHome .item h2 {
+    font-size: 18px; /* Slightly smaller font for mobile */
+    margin-bottom: 5px;
+  }
+
+  .aboutHome .item p {
+    font-size: 14px; /* Reduce font size for readability */
+    color: #999999;
+  }
+
+  .aboutHome .item:hover {
+    box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.1); /* Slightly lighter box-shadow */
+  }
+
+  /* Hide the awrapper section on mobile */
+  .awrapper {
+    display: none; /* Hides the awrapper on mobile */
+  }
+
+  /* Hide the About Us title on mobile */
+  #nowant {
+    display: none !important; /* Ensure the 'nowant' div containing the About Us title is hidden */
+  }
+
+  .aboutHome .container {
+    width: 100%; /* Ensure the container is full width on mobile */
+  }
+
+  /* Ensure all sections are responsive and stack properly */
+  .aboutHome .row {
+    width: 100%; /* Ensure row takes full width */
+  }
+  
+}

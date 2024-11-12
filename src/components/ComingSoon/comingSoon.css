@@ -1,0 +1,43 @@
+/* src/components/ComingSoon.css */
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .coming-soon h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2d67d3; /* A green color for emphasis */
+    margin-bottom: 20px;
+  }
+  
+  .coming-soon p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .coming-soon .button {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .coming-soon .button:hover {
+    background-color: #45a049;
+  }
+  
