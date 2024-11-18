@@ -30,7 +30,7 @@ const Contact = () => {
               </div>
               <div className='box'>
                 <h4>PHONE:</h4>
-                <p> +1 (800) 123-4567</p>
+                <p> +1 (403) 835-9164</p>
               </div>
             </div>
 
@@ -46,8 +46,7 @@ const Contact = () => {
               <button className='primary-btn'>SEND MESSAGE</button>
             </form>
 
-            <h3>Follow us here</h3>
-            <span>FACEBOOK TWITTER INSTAGRAM DRIBBBLE</span>
+           
           </div>
         </div>
       </section>

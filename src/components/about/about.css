@@ -97,11 +97,13 @@
   .aboutHome {
     flex-direction: column; /* Stack left and right sections vertically */
     padding: 20px 10px; /* Add padding for better mobile spacing */
+    margin-top: 0; /* Remove unwanted top margin to reduce the gap */
   }
 
   .aboutHome #heading {
     text-align: center; /* Center the heading text on mobile */
     padding: 0;
+    margin-top: 0; /* Remove any margin above the heading */
   }
 
   .aboutHome .left img {
@@ -111,6 +113,7 @@
 
   .aboutHome .right {
     padding: 20px 10px; /* Reduce padding for mobile */
+    margin-top: 0; /* Remove any top margin to eliminate gap */
   }
 
   .aboutHome .items {
@@ -144,49 +147,47 @@
   }
 
   /* Hide the awrapper section on mobile */
-  @media (max-width: 768px) {
-    .awrapper {
-      height: auto; /* Allow height to adjust to content on mobile */
-      padding: 40px 20px; /* Add padding for spacing */
-    }
-  
-    .awrapper .container {
-      display: block; /* Stack items vertically */
-    }
-  
-    .awrapper .box {
-      padding: 20px;
-      flex-direction: column; /* Stack the image and text vertically */
-      align-items: center;
-      text-align: center;
-    }
-  
-    .awrapper img {
-      margin-right: 0; /* Remove right margin */
-      margin-bottom: 15px; /* Add space between image and text */
-      width: 60px; /* Reduce image size on mobile */
-      height: 60px;
-    }
-  
-    .awrapper h1 {
-      font-size: 30px; /* Reduce heading size */
-    }
-  
-    .awrapper h3 {
-      font-size: 16px; /* Reduce subtitle size */
-    }
+  .awrapper {
+    height: auto; /* Allow height to adjust to content on mobile */
+    padding: 40px 20px; /* Add padding for spacing */
   }
-  
+
+  .awrapper .container {
+    display: block; /* Stack items vertically */
+  }
+
+  .awrapper .box {
+    padding: 20px;
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .awrapper img {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 15px; /* Add space between image and text */
+    width: 60px; /* Reduce image size on mobile */
+    height: 60px;
+  }
+
+  .awrapper h1 {
+    font-size: 30px; /* Reduce heading size */
+  }
+
+  .awrapper h3 {
+    font-size: 16px; /* Reduce subtitle size */
+  }
+
   /* Additional mobile optimizations for very small screens */
   @media (max-width: 480px) {
     .awrapper h1 {
       font-size: 25px; /* Further reduce heading size */
     }
-  
+
     .awrapper h3 {
       font-size: 14px; /* Further reduce subtitle size */
     }
-  
+
     .awrapper img {
       width: 50px; /* Further reduce image size */
       height: 50px;
@@ -206,5 +207,4 @@
   .aboutHome .row {
     width: 100%; /* Ensure row takes full width */
   }
-  
 }
