@@ -1,9 +1,6 @@
-import React from "react"
-import { useLocation } from "react-router-dom"
+import React from "react";
 
 const Back = ({ title }) => {
-  const location = useLocation()
-
   return (
     <>
       <section className='back'>
@@ -12,7 +9,7 @@ const Back = ({ title }) => {
       </section>
       <div className='margin'></div>
     </>
-  )
-}
+  );
+};
 
-export default Back
+export default Back;
