@@ -6,7 +6,7 @@ import About from "./components/about/About";
 import CourseHome from "./components/allcourses/CourseHome";
 import Dashboard from "./components/dashboard/Dashboard";
 import Features from "./components/Features/features";
-import Blog from "./components/benefits/Benefits";
+
 import Contact from "./components/contact/Contact";
 import 'bootstrap/dist/js/bootstrap.min.js';
 import Home from "./components/home/Home";
@@ -23,7 +23,7 @@ function App() {
         <Route path="/courses" element={<CourseHome />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/features" element={<Features />} />
-        <Route path="/benefits" element={<Blog />} />
+        
         <Route path="/contact" element={<Contact />} />
         <Route path="/supported-conversions" element={<SupportedConversions />} />
         <Route path="/coming-soon" element={<ComingSoon />} /> {/* Add the new route */}

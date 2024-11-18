@@ -3,7 +3,7 @@ import { price } from "../../dummydata";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopesBulk, faLock, faSitemap } from '@fortawesome/free-solid-svg-icons';
 import { faWorm } from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from "react-router-dom";
 
 
 const PriceCard = () => {
@@ -26,7 +26,9 @@ const PriceCard = () => {
             )}
           </h1>
           <p>{val.desc}</p>
-          <button className='outline-btn'>LEARN MORE</button>
+          <Link to="/coming-soon">
+  <button className='outline-btn'>LEARN MORE</button>
+</Link>
         </div>
       ))}
     </>

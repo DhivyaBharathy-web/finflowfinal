@@ -119,7 +119,9 @@ header ul li a:hover {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 2px 8px rgba(45, 103, 211, 0.1);
   }
-
+  .toggle i {
+    margin: 0 auto;
+  }
   /* Mobile navigation menu */
   .mobile-nav {
     position: fixed;

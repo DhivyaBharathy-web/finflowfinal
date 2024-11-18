@@ -41,7 +41,7 @@ const Footer = () => {
             <ul>
               <li>About Us</li>
               <li>Features</li>
-              <li>Benefits</li>
+             
               <li>Dashboard</li>
               <li>Contact Us</li>
             </ul>
@@ -70,7 +70,7 @@ const Footer = () => {
               </li>
               <li>
                 <i className="fa fa-phone-alt" style={{ color: "#2d67d3" }}></i>
-                +1 (800) 123-4567
+                +1 (403) 835-9164
               </li>
               <li>
                 <i className="fa fa-paper-plane" style={{ color: "#2d67d3" }}></i>

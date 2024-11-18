@@ -43,119 +43,71 @@
   background-color: #2d67d3;
   color: #fff;
 }
-/* Mobile-specific styles for features page */
 @media screen and (max-width: 768px) {
-  /* Reset spacing for features page */
+  /* Reset core spacing */
   .features-page {
-    margin-top: 0;
-    padding-top: 60px; /* Account for fixed header */
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    top: 0;
   }
 
-  /* Back component adjustments */
-  .back {
-    padding: 20px 0;
-    margin-bottom: 0;
+  /* Remove header gap */
+  header {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /* Price section adjustments */
+  /* Adjust logo and navigation spacing */
+  .logo {
+    padding: 10px 15px;
+  }
+
+  /* Price section immediate fixes */
+  .price {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
   .price.padding {
-    padding: 30px 0;
-  }
-
-  .price .container {
-    padding: 0 15px;
+    padding: 0 !important;
   }
 
   .price .items {
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 0 20px 0;
   }
 
-  .price h1 {
-    font-size: 28px;
-    margin: 15px 0;
-    line-height: 1.2;
+  /* Back component reset */
+  .back {
+    margin: 0 !important;
+    padding: 10px 15px !important;
   }
 
-  .price h1 span {
-    font-size: 16px;
-    display: inline-block;
+  /* Container adjustments */
+  .container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
-  .price p {
-    margin: 15px 0;
-    font-size: 14px;
-    line-height: 1.6;
+  /* Remove any flex gaps */
+  .flexSB {
+    gap: 0 !important;
   }
 
-  /* FAQ section adjustments */
-  .faq {
-    padding: 30px 0;
+  /* Force content to start from top */
+  .price .container:first-child {
+    margin-top: 0 !important;
   }
 
-  .faq .container {
-    max-width: 100%;
-    padding: 0 15px;
+  /* Reset any inherited margins */
+  * {
+    margin-top: 0 !important;
   }
 
-  .faq .box {
-    margin-bottom: 15px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .faq button {
-    padding: 12px 15px;
-    font-size: 15px;
-  }
-
-  .faq h2 {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-  .faq p {
-    padding: 15px;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  /* Grid adjustments */
-  .container.grid {
-    gap: 20px;
-    grid-template-columns: 1fr;
-  }
-
-  /* Animation for content loading */
-  .features-page {
-    animation: fadeIn 0.3s ease-out;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Improve touch targets */
-  .faq button,
-  .price .items button {
-    min-height: 44px;
-  }
-
-  /* Remove unnecessary margins and padding */
-  .price .grid > *:first-child {
-    margin-top: 0;
-  }
-
-  .price .grid > *:last-child {
-    margin-bottom: 0;
+  /* Ensure proper stacking */
+  .price, .faq {
+    position: relative;
+    z-index: 1;
   }
 }

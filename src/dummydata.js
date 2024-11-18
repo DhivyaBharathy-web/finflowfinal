@@ -360,44 +360,7 @@ export const faq = [
     desc: "A8: The institution saw long-term improvements in processing speed, error reduction, and employee productivity. These benefits not only optimized operational efficiency but also enhanced the institution's reputation in handling international transactions reliably and swiftly.",
   },
 ]
-export const blog = [
-  {
-    
-    title: "Seamless Message Conversion",
-    desc: "FinFlow automates the conversion of financial messages across various formats (e.g., MT103, MT202, ISO 20022, etc.), ensuring no manual intervention and reducing the risk of errors.",
-    cover: "../images/seamless.png",
-  },
-  {
-    title: "Improved Compliance",
-    desc: "The solution ensures compliance with international messaging standards like SWIFT's ISO 20022, facilitating smooth integration with global and regional payment systems.",
-    cover: "../images/authenticity.png",
-  },
-  {
-   
-    title: "Faster Processing Speed",
-    desc: "By automating the message conversion process, FinFlow significantly improves processing speed, leading to faster transaction times.",
-    cover: "../images/speed.png",
-  },
-  {
-   
-    title: "Reduced Manual Effort",
-    desc: "The automation of message conversion reduces the need for manual work, freeing up employee time for more strategic tasks and minimizing human errors.",
-    cover: "../images/manual.png",
-  },
-  {
-   
-    title: "Real-Time Monitoring and Issue Resolution",
-    desc: "FinFlow offers real-time processing status with detailed summaries and error notifications, enabling quick resolution of any issues that arise.",
-    cover: "../images/computer-screen.png",
-  },
-  {
-    id: 6,
- 
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/expectation.png",
-  },
-]
+
 export const testimonal = [
   {
     id: 1,
