@@ -125,11 +125,11 @@
   font-size: 1.2rem;
 }
 
-.activity-item.processed i { color: #32cd32; }
-.activity-item.error i { color: #ff0000; }
-.activity-item.transformed i { color: #1e90ff; }
-.activity-item.delivered i { color: #32cd32; }
-.activity-item.pending i { color: #ffa500; }
+.activity-item.processed i { color: #66cc66; }
+.activity-item.error i { color: #ff9966; }
+.activity-item.transformed i { color: #4da6ff; }
+.activity-item.delivered i { color: #66cc66; }
+.activity-item.pending i { color: #ffc980; }
 
 @media (max-width: 768px) {
   /* Reset base styles */

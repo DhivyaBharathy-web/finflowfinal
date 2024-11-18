@@ -31,18 +31,24 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/supported-conversions">Supported Conversions</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
+              <Link to="/supported-conversions">About</Link>
             </li>
             <li>
               <Link to="/features">Features</Link>
             </li>
+            <li>
+              <Link to="/about">Benefits</Link>
+            </li>
+            {/* <li>
+              <Link to="/dashboard">Team</Link>
+            </li> */}
            
+            <li>
+              <Link to="/benefits">Advantages</Link>
+            </li>
+            <li>
+<Link to="/who-we-are">Who we are</Link>
+</li>
             <li>
               <Link to="/contact">Contact</Link>
             </li>

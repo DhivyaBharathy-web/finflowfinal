@@ -64,7 +64,7 @@
 
 /*----------awrapper------------*/
 .awrapper {
-  background-color: rgba(45, 103, 211, 0.8);
+  background-color: #2d67d3;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -144,8 +144,53 @@
   }
 
   /* Hide the awrapper section on mobile */
-  .awrapper {
-    display: none; /* Hides the awrapper on mobile */
+  @media (max-width: 768px) {
+    .awrapper {
+      height: auto; /* Allow height to adjust to content on mobile */
+      padding: 40px 20px; /* Add padding for spacing */
+    }
+  
+    .awrapper .container {
+      display: block; /* Stack items vertically */
+    }
+  
+    .awrapper .box {
+      padding: 20px;
+      flex-direction: column; /* Stack the image and text vertically */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .awrapper img {
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 15px; /* Add space between image and text */
+      width: 60px; /* Reduce image size on mobile */
+      height: 60px;
+    }
+  
+    .awrapper h1 {
+      font-size: 30px; /* Reduce heading size */
+    }
+  
+    .awrapper h3 {
+      font-size: 16px; /* Reduce subtitle size */
+    }
+  }
+  
+  /* Additional mobile optimizations for very small screens */
+  @media (max-width: 480px) {
+    .awrapper h1 {
+      font-size: 25px; /* Further reduce heading size */
+    }
+  
+    .awrapper h3 {
+      font-size: 14px; /* Further reduce subtitle size */
+    }
+  
+    .awrapper img {
+      width: 50px; /* Further reduce image size */
+      height: 50px;
+    }
   }
 
   /* Hide the About Us title on mobile */

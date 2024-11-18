@@ -26,7 +26,7 @@ const Contact = () => {
               </div>
               <div className='box'>
                 <h4>EMAIL:</h4>
-                <p> support@finflow.com</p>
+                <p> support@fintrendinc.com</p>
               </div>
               <div className='box'>
                 <h4>PHONE:</h4>

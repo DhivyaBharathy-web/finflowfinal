@@ -1,22 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import "./footer.css";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
+  // State to hold the email input
+  const [email, setEmail] = useState("");
+
+  // Function to handle the email submission
+  const handleSubmit = async () => {
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzmqe0_l341EXRJIPoImi5taJwEV29X32yYk4D-pTqukJjHLFZO7xLPeJyasq2eayq0/exec"; // Replace with your Google Apps Script URL
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        mode: "no-cors", // 'no-cors' mode for simplicity; adjust if needed
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({ email }), // Send email as form data
+      });
+
+      if (response) {
+        alert("Email submitted successfully!");
+        setEmail(""); // Clear the input after submission
+      }
+    } catch (error) {
+      console.error("Error!", error.message);
+      alert("Failed to submit email!");
+    }
+  };
+
   return (
     <>
       <section className="newletter">
-  <div className="container flexSB">
-    <div className="left row">
-      <h1>Flow with the latest Finflow updates</h1>
-      <span>Your source for streamlined message conversion.</span>
-    </div>
-    <div className="right row">
-      <input type="text" placeholder="Enter email address" />
-      <i className="fa fa-paper-plane"></i>
-    </div>
-  </div>
-</section>
-
+        <div className="container flexSB">
+          <div className="left row">
+            <h1>Flow with the latest Finflow updates</h1>
+            <span>Your source for streamlined message conversion.</span>
+          </div>
+          <div className="right row">
+            <input
+              type="text"
+              placeholder="Enter email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)} // Update state on input change
+            />
+            <i
+              className="fa fa-paper-plane"
+              onClick={handleSubmit} // Call the submit function when clicking the icon
+              style={{ cursor: "pointer" }}
+            ></i>
+          </div>
+        </div>
+      </section>
 
       <footer>
         <div className="container padding">
@@ -29,32 +64,27 @@ const Footer = () => {
             <p>
               Take Control with Customization and Flexibility through FinFlow
             </p>
-            <div className="social-icons">
-              <i className="fab fa-facebook-f icon"></i>
-              <i className="fab fa-twitter icon"></i>
-              <i className="fab fa-instagram icon"></i>
-            </div>
+           
           </div>
 
           <div className="box link">
             <h3>Explore</h3>
             <ul>
-              <li>About Us</li>
-              <li>Features</li>
-             
-              <li>Dashboard</li>
-              <li>Contact Us</li>
+            <li><Link to="/about"  style={{ color: 'black' }}>About Us</Link></li>
+<li ><Link to="/features"  style={{ color: 'black' }}>Features</Link></li>
+<li><Link to="/dashboard"  style={{ color: 'black' }}>Dashboard</Link></li>
+<li ><Link to="/contact"  style={{ color: 'black' }}>Contact Us</Link></li>
             </ul>
           </div>
 
           <div className="box link">
             <h3>Quick Links</h3>
             <ul>
-              <li>Contact Us</li>
-              <li>Pricing</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy</li>
-              <li>Feedback</li>
+            <li><Link to="/benefits"  style={{ color: 'black' }}>Benefits</Link></li>
+            <li ><Link to="/features"  style={{ color: 'black' }}>Who we are</Link></li>
+            <li ><Link to="/features"  style={{ color: 'black' }}>FAQ</Link></li>
+            <li ><Link to="/supported-conversions"  style={{ color: 'black' }}>Conversion</Link></li>
+            <li ><Link to="/contact"  style={{ color: 'black' }}>Feedback</Link></li>
             </ul>
           </div>
 
@@ -74,7 +104,7 @@ const Footer = () => {
               </li>
               <li>
                 <i className="fa fa-paper-plane" style={{ color: "#2d67d3" }}></i>
-                support@finflow.com
+                support@fintrendinc.com
               </li>
               <li>
                 <i className="fa fa-clock" style={{ color: "#2d67d3" }}></i>

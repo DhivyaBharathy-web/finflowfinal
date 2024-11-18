@@ -1,0 +1,100 @@
+.blog img {
+    width: 30%;
+    height: 30%;
+    background-color: #2d67d3;
+    border-radius: 50%; /* Adds rounded corners */
+    margin: auto; /* Centers horizontally */
+    display: block; /* Required for margin: auto to work */
+    object-fit: cover; /* Maintains aspect ratio */
+  }
+  .blog .text {
+    padding: 40px 30px;
+  }
+  .blog h1 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 20px 0;
+    transition: 0.5s;
+  }
+  .blog h1:hover {
+    color: #2d67d3;
+    cursor: pointer;
+  }
+  .blog span {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #2d67d3;
+  }
+  .blog span label {
+    margin-left: 10px;
+    color: grey;
+    font-size: 14px;
+  }
+  .blog span:nth-last-child(1) label {
+    color: #2d67d3;
+  }
+  .blog p {
+    color: grey;
+  }
+  @media screen and (max-width: 768px) {
+    .back {
+      display: none;
+    }
+   
+    
+    /* Adjusting the image in mobile view */
+    .blog img {
+      width: 70%; /* Increase image size for mobile */
+      height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+      background-color: #2d67d3;
+      border-radius: 50%;
+      margin: 20px auto; /* Center the image with some space above and below */
+      display: block;
+      object-fit: cover;
+    }
+  
+    /* Adjust the padding in the blog text */
+    .blog .text {
+      padding: 20px 15px; /* Reduce padding on mobile for better spacing */
+    }
+  
+    /* Adjusting the title (h1) for mobile */
+    .blog h1 {
+      font-weight: 500;
+      font-size: 18px; /* Smaller font size for mobile */
+      line-height: 26px;
+      margin: 15px 0;
+      transition: none; /* Remove transition effect on mobile */
+    }
+  
+    /* Remove the hover color change for the title (h1) */
+    .blog h1:hover {
+      color: inherit; /* Ensure no color change on hover */
+      cursor: default; /* No pointer cursor */
+    }
+  
+    /* Adjusting the span text */
+    .blog span {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #2d67d3;
+    }
+  
+    /* Adjusting the label inside span */
+    .blog span label {
+      margin-left: 10px;
+      color: grey;
+      font-size: 14px;
+    }
+  
+    .blog span:nth-last-child(1) label {
+      color: #2d67d3;
+    }
+  
+    /* Adjust the paragraph text */
+    .blog p {
+      color: grey;
+      font-size: 14px; /* Adjust font size for readability */
+    }
+  }

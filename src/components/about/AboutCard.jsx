@@ -10,7 +10,7 @@ const AboutCard = () => {
       <section className="aboutHome">
         <div className="container flexSB">
           <div className="left row">
-            <img src="./images/aboutbackground.jpg" alt="" />
+            <img src="./images/aboutbackground.jpeg" alt="" />
           </div>
           <div className="right row">
             <Heading subtitle="FINFLOW KEY BENEFITS" title="Unlock the Powerful Benefits of FinFlow" />
