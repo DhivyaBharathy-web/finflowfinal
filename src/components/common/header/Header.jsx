@@ -7,16 +7,24 @@ const Header = () => {
   const [click, setClick] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
+  // Function to handle scrolling, add "scrolled" class when the user scrolls down
   const handleScroll = () => {
     setScrolling(window.scrollY > 50);
   };
 
+  // Add/remove event listener for scroll
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Function to scroll to the top smoothly
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setClick(false); // Close the mobile menu after clicking a link
+  };
 
   return (
     <>
@@ -28,34 +36,33 @@ const Header = () => {
             onClick={() => setClick(false)}
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={handleLinkClick}>Home</Link>
             </li>
             <li>
-              <Link to="/supported-conversions">About</Link>
+              <Link to="/supported-conversions" onClick={handleLinkClick}>About</Link>
             </li>
             <li>
-              <Link to="/features">Features</Link>
+              <Link to="/features" onClick={handleLinkClick}>Features</Link>
             </li>
             <li>
-              <Link to="/about">Benefits</Link>
+              <Link to="/about" onClick={handleLinkClick}>Benefits</Link>
             </li>
             {/* <li>
-              <Link to="/dashboard">Team</Link>
+              <Link to="/dashboard" onClick={handleLinkClick}>Team</Link>
             </li> */}
-           
             <li>
-              <Link to="/benefits">Advantages</Link>
+              <Link to="/benefits" onClick={handleLinkClick}>Advantages</Link>
             </li>
             <li>
-<Link to="/who-we-are">Who we are</Link>
-</li>
+              <Link to="/who-we-are" onClick={handleLinkClick}>Who we are</Link>
+            </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={handleLinkClick}>Contact</Link>
             </li>
           </ul>
 
           <div className="start">
-            <Link to="/coming-soon">
+            <Link to="/coming-soon" onClick={handleLinkClick}>
               <div className="button" style={{ color: "#FFF" }}>TRY OUR APP</div>
             </Link>
           </div>

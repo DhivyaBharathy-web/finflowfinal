@@ -93,118 +93,122 @@
 
 
 @media screen and (max-width: 768px) {
-  /* Adjust the aboutHome container */
+  /* Specific styles for about page only */
+  .about-page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .about-page .container {
+    margin-top: 0 !important;
+  }
+
+  /* Rest of the mobile styles remain unchanged */
   .aboutHome {
-    flex-direction: column; /* Stack left and right sections vertically */
-    padding: 20px 10px; /* Add padding for better mobile spacing */
-    margin-top: 0; /* Remove unwanted top margin to reduce the gap */
+    flex-direction: column;
+    padding: 20px 10px;
   }
 
   .aboutHome #heading {
-    text-align: center; /* Center the heading text on mobile */
+    text-align: center;
     padding: 0;
-    margin-top: 0; /* Remove any margin above the heading */
   }
 
   .aboutHome .left img {
-    opacity: 0; 
-    /* Hide the image in mobile */
+    opacity: 0;
   }
 
   .aboutHome .right {
-    padding: 20px 10px; /* Reduce padding for mobile */
-    margin-top: 0; /* Remove any top margin to eliminate gap */
+    padding: 20px 10px;
+    margin-top: 0;
   }
 
   .aboutHome .items {
-    margin-top: 30px; /* Reduced margin for tighter layout */
+    margin-top: 30px;
   }
 
   .aboutHome .item {
-    flex-direction: column; /* Stack the icon and text vertically on mobile */
-    padding: 15px; /* Reduce padding for mobile */
-    margin-top: 20px; /* Reduce margin to avoid large gaps */
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 20px;
   }
 
   .aboutHome .img {
-    width: 50px; /* Smaller icon size */
-    height: 50px; /* Smaller icon size */
-    margin-bottom: 10px; /* Adjust spacing between icon and text */
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
   }
 
   .aboutHome .item h2 {
-    font-size: 18px; /* Slightly smaller font for mobile */
+    font-size: 18px;
     margin-bottom: 5px;
   }
 
   .aboutHome .item p {
-    font-size: 14px; /* Reduce font size for readability */
+    font-size: 14px;
     color: #999999;
   }
 
   .aboutHome .item:hover {
-    box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.1); /* Slightly lighter box-shadow */
+    box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.1);
   }
 
-  /* Hide the awrapper section on mobile */
   .awrapper {
-    height: auto; /* Allow height to adjust to content on mobile */
-    padding: 40px 20px; /* Add padding for spacing */
+    height: auto;
+    padding: 40px 20px;
   }
 
   .awrapper .container {
-    display: block; /* Stack items vertically */
+    display: block;
   }
 
   .awrapper .box {
     padding: 20px;
-    flex-direction: column; /* Stack the image and text vertically */
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
   .awrapper img {
-    margin-right: 0; /* Remove right margin */
-    margin-bottom: 15px; /* Add space between image and text */
-    width: 60px; /* Reduce image size on mobile */
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 60px;
     height: 60px;
   }
 
   .awrapper h1 {
-    font-size: 30px; /* Reduce heading size */
+    font-size: 30px;
   }
 
   .awrapper h3 {
-    font-size: 16px; /* Reduce subtitle size */
+    font-size: 16px;
   }
 
-  /* Additional mobile optimizations for very small screens */
-  @media (max-width: 480px) {
-    .awrapper h1 {
-      font-size: 25px; /* Further reduce heading size */
-    }
-
-    .awrapper h3 {
-      font-size: 14px; /* Further reduce subtitle size */
-    }
-
-    .awrapper img {
-      width: 50px; /* Further reduce image size */
-      height: 50px;
-    }
-  }
-
-  /* Hide the About Us title on mobile */
   #nowant {
-    display: none !important; /* Ensure the 'nowant' div containing the About Us title is hidden */
+    display: none !important;
   }
 
   .aboutHome .container {
-    width: 100%; /* Ensure the container is full width on mobile */
+    width: 100%;
   }
 
-  /* Ensure all sections are responsive and stack properly */
   .aboutHome .row {
-    width: 100%; /* Ensure row takes full width */
+    width: 100%;
+  }
+
+  /* Small screen adjustments */
+  @media (max-width: 480px) {
+    .awrapper h1 {
+      font-size: 25px;
+    }
+
+    .awrapper h3 {
+      font-size: 14px;
+    }
+
+    .awrapper img {
+      width: 50px;
+      height: 50px;
+    }
   }
 }

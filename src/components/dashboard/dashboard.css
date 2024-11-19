@@ -126,10 +126,10 @@
 }
 
 .activity-item.processed i { color: #66cc66; }
-.activity-item.error i { color: #ff9966; }
+.activity-item.error i { color: #ff6666; }
 .activity-item.transformed i { color: #4da6ff; }
 .activity-item.delivered i { color: #66cc66; }
-.activity-item.pending i { color: #ffc980; }
+.activity-item.pending i { color: #f3b462; }
 
 @media (max-width: 768px) {
   /* Reset base styles */

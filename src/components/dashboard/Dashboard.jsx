@@ -40,7 +40,7 @@ const Dashboard = () => {
       <section className="message-status">
 <h2>Incoming Messages</h2>
 <div className="status-cards">
-<DashboardCard title="Pending" count={data.incomingMessages.pending} icon="hourglass" color="#ffc980" />
+<DashboardCard title="Pending" count={data.incomingMessages.pending} icon="hourglass" color="#f3b462" />
 <DashboardCard title="Error" count={data.incomingMessages.error} icon="exclamation-circle" color="#ff6666" />
 <DashboardCard title="Processed" count={data.incomingMessages.processed} icon="check-circle" color="#66cc66" />
 </div>
@@ -50,7 +50,7 @@ const Dashboard = () => {
 <h2>Outgoing Messages</h2>
 <div className="status-cards">
 <DashboardCard title="Transformed" count={data.outgoingMessages.transformed} icon="random" color="#4da6ff" />
-<DashboardCard title="Error" count={data.outgoingMessages.error} icon="exclamation-triangle" color="#ff9966" />
+<DashboardCard title="Error" count={data.outgoingMessages.error} icon="exclamation-triangle" color="#ff6666" />
 <DashboardCard title="Delivered" count={data.outgoingMessages.delivered} icon="paper-plane" color="#66cc66" />
 </div>
 </section>

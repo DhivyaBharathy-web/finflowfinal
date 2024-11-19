@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
+
+// Function to scroll smoothly to the top of the page
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 const Footer = () => {
   // State to hold the email input
   const [email, setEmail] = useState("");
@@ -64,27 +70,62 @@ const Footer = () => {
             <p>
               Take Control with Customization and Flexibility through FinFlow
             </p>
-           
           </div>
 
           <div className="box link">
             <h3>Explore</h3>
             <ul>
-            <li><Link to="/about"  style={{ color: 'black' }}>About Us</Link></li>
-<li ><Link to="/features"  style={{ color: 'black' }}>Features</Link></li>
-<li><Link to="/dashboard"  style={{ color: 'black' }}>Dashboard</Link></li>
-<li ><Link to="/contact"  style={{ color: 'black' }}>Contact Us</Link></li>
+              <li>
+                <Link to="/about" onClick={scrollToTop} style={{ color: 'black' }}>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/features" onClick={scrollToTop} style={{ color: 'black' }}>
+                  Features
+                </Link>
+              </li>
+              <li>
+                <Link to="/dashboard" onClick={scrollToTop} style={{ color: 'black' }}>
+                  Dashboard
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" onClick={scrollToTop} style={{ color: 'black' }}>
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div className="box link">
             <h3>Quick Links</h3>
             <ul>
-            <li><Link to="/benefits"  style={{ color: 'black' }}>Benefits</Link></li>
-            <li ><Link to="/features"  style={{ color: 'black' }}>Who we are</Link></li>
-            <li ><Link to="/features"  style={{ color: 'black' }}>FAQ</Link></li>
-            <li ><Link to="/supported-conversions"  style={{ color: 'black' }}>Conversion</Link></li>
-            <li ><Link to="/contact"  style={{ color: 'black' }}>Feedback</Link></li>
+              <li>
+                <Link to="/benefits" onClick={scrollToTop} style={{ color: 'black' }}>
+                  Benefits
+                </Link>
+              </li>
+              <li>
+                <Link to="/features" onClick={scrollToTop} style={{ color: 'black' }}>
+                  Who we are
+                </Link>
+              </li>
+              <li>
+                <Link to="/features" onClick={scrollToTop} style={{ color: 'black' }}>
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/supported-conversions" onClick={scrollToTop} style={{ color: 'black' }}>
+                  Conversion
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" onClick={scrollToTop} style={{ color: 'black' }}>
+                  Feedback
+                </Link>
+              </li>
             </ul>
           </div>
 
